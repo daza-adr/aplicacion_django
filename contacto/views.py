@@ -6,6 +6,7 @@ def contacto(request):
         mensaje = Mensaje(
             nombre=request.POST["nombre"],
             correo=request.POST["correo"],
+            asunto=request.POST["asunto"],
             mensaje=request.POST["mensaje"]
         )
         mensaje.save()
